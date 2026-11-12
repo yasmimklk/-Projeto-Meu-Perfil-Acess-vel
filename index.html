@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Conheça o perfil de um estudante, seus interesses, rotina e formas de aprendizagem.">
+
+    <title>Meu Perfil Acessível</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>👤 Meu Perfil Acessível</h1>
+
+            <p>Conheça um pouco sobre este estudante.</p>
+        </div>
+    </header>
+
+    <!-- Menu -->
+    <nav aria-label="Menu principal">
+        <div class="container">
+            <ul>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#gostos">Meus gostos</a></li>
+                <li><a href="#aprendizado">Aprendizagem</a></li>
+                <li><a href="#rotina">Rotina</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+
+        <!-- Perfil do estudante -->
+        <section id="perfil" class="container">
+            <h2>Sobre mim</h2>
+
+            <div class="perfil-card">
+
+                <img
+                    src="https://api.dicebear.com/9.x/avataaars/svg?seed=Joao"
+                    alt="Avatar ilustrado do estudante João."
+                    class="avatar"
+                >
+
+                <div class="dados">
+                    <h3>João</h3>
+
+                    <p><strong>Idade:</strong> 16 anos</p>
+
+                    <p>
+                        <strong>Curso:</strong>
+                        Técnico em Desenvolvimento de Sistemas
+                    </p>
+
+                    <p>
+                        <strong>Interesses:</strong>
+                        Tecnologia, jogos e música
+                    </p>
+
+                    <p>
+                        <strong>Objetivo:</strong>
+                        Aprender programação
+                    </p>
+
+                    <a href="#informacoes" class="botao">
+                        📋 Ver informações completas
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Gostos pessoais -->
+        <section id="gostos" class="container">
+            <h2>Eu gosto de...</h2>
+
+            <div class="cards">
+
+                <article class="card">
+                    <span class="icone" aria-hidden="true">🎮</span>
+                    <h3>Jogos</h3>
+                    <p>Gosto de jogar e conhecer novos jogos.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icone" aria-hidden="true">🎵</span>
+                    <h3>Música</h3>
+                    <p>Gosto de ouvir músicas no meu tempo livre.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icone" aria-hidden="true">💻</span>
+                    <h3>Computadores</h3>
+                    <p>Gosto de aprender sobre tecnologia.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icone" aria-hidden="true">⚽</span>
+                    <h3>Esportes</h3>
+                    <p>Gosto de praticar atividades físicas.</p>
+                </article>
+
+                <article class="card">
+                    <span class="icone" aria-hidden="true">📚</span>
+                    <h3>Leitura</h3>
+                    <p>Gosto de descobrir coisas novas.</p>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- Aprendizagem -->
+        <section id="aprendizado" class="container">
+            <h2>Como eu aprendo melhor?</h2>
+
+            <div class="aprendizado">
+                <h3>📖 Aprendo melhor quando:</h3>
+
+                <ul>
+                    <li>As instruções são claras.</li>
+                    <li>As atividades estão organizadas.</li>
+                    <li>Tenho exemplos para acompanhar.</li>
+                    <li>Sei o que preciso fazer.</li>
+                    <li>As informações estão divididas em etapas.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Rotina -->
+        <section id="rotina" class="container">
+            <h2>Minha Rotina</h2>
+
+            <p>Estas são algumas atividades do meu dia.</p>
+
+            <div class="tabela-responsiva">
+                <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Horário</th>
+                            <th scope="col">Atividade</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>07h00</td>
+                            <td>Acordar</td>
+                        </tr>
+
+                        <tr>
+                            <td>08h00</td>
+                            <td>Escola</td>
+                        </tr>
+
+                        <tr>
+                            <td>12h00</td>
+                            <td>Almoço</td>
+                        </tr>
+
+                        <tr>
+                            <td>13h30</td>
+                            <td>Estudos</td>
+                        </tr>
+
+                        <tr>
+                            <td>18h00</td>
+                            <td>Lazer</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Informações completas -->
+        <section id="informacoes" class="container informacoes">
+            <h2>Informações completas</h2>
+
+            <p>
+                João é um estudante de 16 anos que gosta de
+                tecnologia, jogos e música.
+            </p>
+
+            <p>
+                Seu objetivo é aprender programação e desenvolver
+                projetos utilizando computadores.
+            </p>
+
+            <p>
+                Aprende melhor com instruções claras,
+                exemplos e atividades organizadas.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>👤 Meu Perfil Acessível</p>
+
+            <p>Respeito, inclusão e acessibilidade para todos.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
