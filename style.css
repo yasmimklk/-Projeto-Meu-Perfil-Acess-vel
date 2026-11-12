@@ -1,0 +1,264 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f5;
+    color: #263238;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+/* Conteúdo */
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #dcebe5;
+    color: #234b3c;
+    text-align: center;
+    padding: 45px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Menu */
+nav {
+    background-color: #315c4b;
+    padding: 15px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Seções */
+section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+h2 {
+    color: #315c4b;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #315c4b;
+    margin-bottom: 10px;
+}
+
+/* Cartão do perfil */
+.perfil-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background-color: #e5eee9;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #c5d8cc;
+}
+
+.avatar {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-color: #dcebe5;
+    border: 5px solid #56836d;
+}
+
+.dados p {
+    margin-bottom: 8px;
+}
+
+/* Botão */
+.botao {
+    display: inline-block;
+    background-color: #315c4b;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.botao:hover {
+    background-color: #234333;
+    text-decoration: underline;
+}
+
+/* Cards de interesses */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #e5eee9;
+    border: 1px solid #c5d8cc;
+    border-left: 5px solid #56836d;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.icone {
+    display: block;
+    font-size: 35px;
+    margin-bottom: 10px;
+}
+
+/* Aprendizagem */
+.aprendizado {
+    background-color: #e5eee9;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.aprendizado ul {
+    padding-left: 25px;
+}
+
+.aprendizado li {
+    margin-bottom: 10px;
+}
+
+/* Tabela de rotina */
+.tabela-responsiva {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+}
+
+th {
+    background-color: #315c4b;
+    color: white;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border: 1px solid #c5d8cc;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #e5eee9;
+}
+
+/* Informações completas */
+.informacoes {
+    background-color: #e5eee9;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+}
+
+.informacoes p {
+    margin-bottom: 12px;
+}
+
+/* Foco de acessibilidade */
+a:focus-visible {
+    outline: 3px solid #d28b24;
+    outline-offset: 4px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #315c4b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 850px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 27px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .perfil-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 150px;
+        height: 150px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    body {
+        font-size: 17px;
+    }
+
+    .botao {
+        display: block;
+        text-align: center;
+    }
+}
+
+/* Respeita a preferência por movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
